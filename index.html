@@ -2,10 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="path-to-portal-style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student IT Report Portal</title>
-    
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f7fc;
+            color: #333;
+        }
+
+        header {
+            background-color: #005f99;
+            color: white;
+            padding: 15px 15px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #eaf3f9;
+            padding: 10px;
+            border-bottom: 1px solid #eaf3f9;
+        }
+
+        nav button {
+            background: none;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            color: #005f99;
+            border-radius: 5px;
+        }
+
+        nav button:hover {
+            background-color: #d0e9f9;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group button {
+            background-color: #005f99;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #00477a;
+        }
+
+        .reports {
+            margin-top: 20px;
+        }
+
+        .report-card {
+            padding: 10px;
+            background: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background: #005f99;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <!-- Login Page -->
@@ -13,6 +113,7 @@
         <header>
             <h2>Login</h2>
         </header>
+        <br>
         <form id="login-form" onsubmit="login(event)">
             <div class="form-group">
                 <label for="username">Username</label>
@@ -53,8 +154,10 @@
             <a href="#" onclick="toggleForms('login')">Already have an account? Login</a>
         </form>
     </div>
-
-    <!-- Main Portal -->
+<script src="https://console.firebase.google.com/project/report-portal-7ba97/database/report-portal-7ba97-default-rtdb/data/~2F"></script>
+<script src="./js">
+</script>
+<!-- Main Portal -->
     <div id="main-portal" class="container" style="display: none;">
         <header>
             <h1>Student IT Report Portal</h1>
@@ -68,13 +171,6 @@
             <p>© 2024 Student IT Report Portal. All rights reserved.</p>
         </footer>
     </div>
-
-    <script>
-        // Add your JavaScript logic for login, register, report submission, and viewing here
-    </script>
-</body>
-</html>
-
 
     <script>
         // Global user data for demonstration
@@ -282,3 +378,6 @@
     
 </body>
 </html>
+
+
+
